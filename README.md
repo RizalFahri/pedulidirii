@@ -1,2 +1,3 @@
 # pedulidirii
-huffttt
+huffttt bagian ngurutkan isi table
+
