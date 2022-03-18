@@ -1,0 +1,216 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+a {
+	text-decoration: none;
+	color: white;
+}
+body {
+	margin: 0;
+	padding: 0;
+	position: relative;
+	overflow: hidden;
+	height: 100vh;
+}
+.pembungkus {
+	position: absolute;
+	top: 33%;
+	left: 30%;
+	transform: translate(-50% -50%);
+	width: 600px;
+	background-color: #E5E3C9;
+	border-radius: 10px;
+	box-shadow: 15px rgb(0, 0, 0);
+}
+.pembungkus .text {
+	text-align: center;
+	padding: 20px 0;
+	border-bottom: 1px solid grey;
+}
+.pembungkus form {
+	padding: 0 40px;
+	box-sizing: border-box;
+}
+form .txt_field{
+	position: relative;
+	border-bottom: 2px solid pink;
+	margin: 20px 0;
+	background-color: skyblue;
+	border-radius: 10px;
+}
+.txt_field input {
+	width: 100%;
+	padding: 0 5;
+	height: 40px;
+	font-size: 16px;
+	border: none;
+	background: none;
+	outline: none;
+}
+.txt_field label {
+	position: absolute;
+	top: 60%;
+	left: 5px;
+	color: white;
+	transform: translateY(-70%);
+	font-size: 16px;
+	pointer-events: none;
+	transition: .5s;
+}
+.txt_field span::before {
+	content: '';
+	position: absolute;
+	top: 40px;
+	left: 0;
+	width: 0;
+	height: 2px;
+	background: white;
+	transition: .5s;
+}
+.txt_field input:focus~label,
+.txt_field input:valid~label {
+	top: -5px;
+	color: black;
+}
+.txt_field input:focus~span::before,
+.txt_field input:valid~span::before {
+	width: 100%;
+}
+input[type="submit"] {
+	width: 46%;
+	margin-left: 2%;
+	margin-right: 1%;
+	height: 40px;
+	background: red;
+	border-radius: 10px;
+	border: 1px solid;
+	font-size: 18px;
+	color: white;
+	font-weight: 700;
+	cursor: pointer;
+	outline: none;
+	margin-bottom: 20px;
+}
+input[type="submit"]:hover {
+	border-color: grey;
+	background-color: pink;
+	transition: .5s;
+}
+form .bawah {
+	padding-bottom: 10px;
+	color: white;
+	text-decoration: none;
+}
+
+
+/*style halaman utama*/
+
+.bungkus_2 {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	width: 90%;
+	background-color: #E5E3C9;
+	border-radius: 15px;
+	box-shadow: 15px rgb(0, 0, 0);
+	padding-bottom: 30px;
+}
+.bungkus_2 .bagian_atas {
+	width: 84%;
+	height: 120px;
+	margin: 0 auto;
+	margin-top: 20px;
+	display: flex;
+}
+.logo {
+	background-image: url(a.jpg);
+	height: 100px;
+	width: 150px;
+	margin-left: 10px;
+	margin-top: 10px; 
+	background-size: 100%;
+	border-radius: 5px 40px 40px 5px;
+	outline: 5px solid;
+}
+.text_2 {
+	margin-left: 40px;
+	margin-top: 15px;
+}
+.text_2 .txt_judul {
+	font-size: 50px;
+	color: white;
+	font-family: 'League Gothic', sans-serif;
+}
+.txt_subjudul {
+	font-family: sans-serif;
+}
+.btn_logout {
+	margin-left: 37%;
+	background-color: #B4CFB0;
+	height: 40px;
+	width: 100px;
+	font-size: 20px;
+	border-radius: 15px 0px 0px 15px;
+	padding: 9px;
+	text-align: center;
+	margin-top: 20px;
+	text-decoration: none;
+	color: white;
+	font-family: sans-serif;
+	outline: 3px solid;
+}
+.bungkus_2 .bagian_bawah {
+	width: 75%;
+	height: 500px;
+	float: right;
+	margin-top: 20px;
+	margin-right: 13%;
+	background-color: #B4CFB0;
+	border-radius: 15px;
+}
+.container {
+	width: 98%;
+	margin: 10px auto;
+	font-family: sans-serif;
+	background-color: #94B49F;
+	padding-right: 10%;
+	padding-left: 10%;
+	border-radius: 13px;
+}
+.container:after {
+	content: "";
+	display: block;
+	clear: both;
+}
+.bagian_bawah h1 {
+	float: left;
+	padding: 15px 0px;
+	color: white;
+}
+.bagian_bawah ul {
+	margin-top: 10px;
+	float: right;
+}
+.bagian_bawah ul li {
+	display: inline-block;
+}
+.bagian_bawah ul li a {
+	padding: 10px 10px;
+	display: inline-block;
+	border: 2px solid;
+	border-radius: 8px;
+}
+.bagian_bawah ul li a:hover {
+	background-color: grey;
+	color: white;
+	border-radius: 8px;
+	border: 2px solid;
+}
+.active {
+	background-color: #789395;
+	color: white;
+	border-radius: 8px;
+}
